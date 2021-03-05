@@ -1,0 +1,43 @@
+<div>
+
+<div class="txt_select">Select</div>
+
+
+<div class="div_table">
+
+<table>
+
+    <tr>
+        <td class="nome_select">Acão</td>
+        <td class="nome_select">Id</td>
+        <td class="nome_select">Nome</td>
+        <td class="nome_select">Quantidade</td>
+        <td class="nome_select">Preco</td>
+        <td class="nome_select">Marca</td>
+        <td class="nome_select">Data de fabricação</td>
+        <td class="nome_select">Data de vencimento</td>
+
+    </tr>
+
+    {{#data}}
+    <tr>
+        <td>
+            <a href='update/{{id}}'>Update</a>
+            <a href='deletar/{{id}}'>Deletar</a>
+        </td>
+        <td>{{id}}</td>
+        <td>{{nome}}</td>
+        <td>{{qnt}}</td>
+        <td>{{preco}}</td>
+        <td>{{marca}}</td>
+        <td>{{datafab}}</td>
+        <td>{{datavenci}}</td>
+
+    </tr>
+    {{/data}}
+
+</table>
+
+</div>
+
+</div>
